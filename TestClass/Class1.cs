@@ -21,5 +21,16 @@ namespace TestClass
             Assert.AreEqual("A triangle is formed and it is an EQUILATERAL", result);
         }
 
+        [Test]
+        public void IsoscelesTriangleTest1()
+        {
+            int side1 = 3;
+            int side2 = 4;
+            int side3 = 4;
+            string result = Triangle.AnalyzeTriangle(side1, side2, side3);
+            Assert.AreEqual("A triangle is formed and it is an ISOSCELES", result);
+        }
+
+
     }
 }
